@@ -8,8 +8,8 @@ from sklearn.metrics import mean_squared_error
 
 # 1. Load data
 df = pd.read_csv("mpg.csv").dropna(subset=['horsepower'])
-X = df[['horsepower']].values
-y = df['mpg'].values
+X = df[['horsepower']]
+y = df['mpg']
 
 # 2. Split data
 X_train, X_test, y_train, y_test = train_test_split(
